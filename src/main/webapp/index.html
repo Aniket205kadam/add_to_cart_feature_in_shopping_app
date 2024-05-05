@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>Welcome to Our Shopping Website, <div class="name">Shopify</div></h1>
+  <div class="user-buttons">
+    <a href="signUpLandingPage.html" class="btn">SignUp or LogIn</a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.jsp">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <h2>Explore Our Latest Products</h2>
+    <!-- Add an ID to the link for targeting it with JavaScript -->
+    <a href="#" id="shopNowBtn" class="btn">Shop Now</a>
+  </section>
+  <section class="features">
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>Wide Range of Products</li>
+      <li>High-Quality Items</li>
+      <li>Fast Delivery</li>
+      <li>Excellent Customer Service</li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2024 Shopping Website. All rights reserved.</p>
+</footer>
+
+<!-- JavaScript to handle the click event and send the request -->
+<script>
+  document.getElementById("shopNowBtn").addEventListener("click", function(event) {
+    // Prevent the default behavior of the link
+    event.preventDefault();
+
+    // Redirect the user to the specified URL
+    window.location.href = "http://localhost:8080/products";
+  });
+</script>
+
+</body>
+</html>

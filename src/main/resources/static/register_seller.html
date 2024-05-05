@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Account Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Welcome to Our Shopping Website, <div class="name">Shopify</div></h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <div class="form-container">
+        <h2>Create Seller Account</h2>
+        <form action="registerSeller" method="post">
+            <div class="form-group">
+                <label for="sellerName">SellerName:</label>
+                <input type="text" id="sellerName" name="sellerName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create Account">
+            </div>
+        </form>
+        <div class="login-option">
+            <p>Already have an account? <a href="seller_login.html">Login</a></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
